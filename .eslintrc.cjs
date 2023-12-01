@@ -12,7 +12,7 @@ module.exports = {
     "plugin:storybook/recommended",
     "plugin:storybook/recommended",
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  ignorePatterns: ["dist", ".eslintrc.cjs", "app.d.ts", "tailwind.config.js"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
@@ -30,5 +30,4 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": "warn",
     "no-unused-vars": "off",
   },
-  
 };
