@@ -6,5 +6,9 @@ export default {
 };
 
 export const Default = {
-  render: () => <Hero />,
+  render: () => (
+    <div className="w-[900px] h-[500px] relative">
+      <Hero />
+    </div>
+  ),
 };
