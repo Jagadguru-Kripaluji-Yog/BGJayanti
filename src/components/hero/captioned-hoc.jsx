@@ -17,8 +17,8 @@ export default function CaptionedHoc(WrappedComponent) {
             backgroundColor: screen.backgroundColor,
           }}
         >
-          <div data-type="caption">
-            <p>{screen.caption}</p>
+          <div data-type="caption" style={screen.captionStyles}>
+            <p style={screen.captionTextStyles}>{screen.caption}</p>
           </div>
         </div>
       ));
