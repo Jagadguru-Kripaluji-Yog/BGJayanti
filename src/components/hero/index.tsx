@@ -1,4 +1,4 @@
-import AwesomeSlider from "react-awesome-slider";
+import AwesomeSlider, { AwesomeSliderProps } from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import withCaptions from "./captioned-hoc";
 import "react-awesome-slider/dist/styles.css";
@@ -9,6 +9,7 @@ const AutoplaySlider = withCaptions(withAutoplay(AwesomeSlider));
 
 export interface HeroProps {
   autoplay?: boolean;
+  transitionDelay?: number;
   screens: {
     media: string;
     caption: React.ReactNode;
@@ -16,14 +17,14 @@ export interface HeroProps {
     captionTextStyles?: React.CSSProperties;
   }[];
 }
-export function Hero({ autoplay, screens }: HeroProps) {
+export function Hero({ autoplay, transitionDelay, screens }: HeroProps) {
   return (
     <AutoplaySlider
       play={!!autoplay}
+      transitionDelay={transitionDelay}
       cancelOnInteraction={false}
       slider
       bullets={false}
-      fillParent
       organicArrows={false}
       screens={screens}
     />

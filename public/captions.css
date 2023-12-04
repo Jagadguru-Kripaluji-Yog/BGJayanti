@@ -8,3 +8,7 @@
 .awssld__content [data-type="caption"] p {
   width: fit-content !important;
 }
+
+.awssld {
+  height: 100%;
+}
