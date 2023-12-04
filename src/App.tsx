@@ -17,14 +17,6 @@ function App() {
                   <h1 className="p-0 md:text-5xl text-2xl">
                     Happy Bhagvad Gita Jayanti!
                   </h1>
-                  <div className="flex flex-col">
-                    <span className="text-2xl">
-                      Fri Dec 15th - Sun Dec 17th
-                    </span>
-                    <span className="text-2xl">
-                      Fri Dec 22nd - Sun Dec 24th
-                    </span>
-                  </div>
                 </div>
               ),
               captionStyles: { marginTop: 50 },
@@ -43,12 +35,16 @@ function App() {
       </section>
       <section
         id="description"
-        className="w-full md:p-10 px-5 my-5 bg-background"
+        className="w-full md:p-10 py-3 px-5 bg-background flex flex-col gap-y-5"
       >
         <h2 className="md:text-3xl text-2xl font-bold text-center">
           JKYog wishes you a very happy Bhagavad Gita Jayanti!
         </h2>
-        <h3 className="mt-3 text-left text-2xl">
+        <div className="flex flex-col items-center">
+          <span className="text-2xl">Fri Dec 15th - Sun Dec 17th</span>
+          <span className="text-2xl">Fri Dec 22nd - Sun Dec 24th</span>
+        </div>
+        <h3 className=" text-left text-2xl">
           This 5000 year old divine scripture has the power to destroy the
           ignorance that has enveloped the soul since endless lifetimes. In
           honor of this exquisite book of wisdom, JKYog and Radha Krishna Temple
