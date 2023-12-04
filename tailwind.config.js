@@ -14,7 +14,7 @@ export default {
         border: "#dad3c8",
         borderNeutral: "#f0ebe1",
         textNeutral: "#645743",
-        textCategory: "#aba293",
+        textCategory: "#8b4513",
       },
     },
   },
