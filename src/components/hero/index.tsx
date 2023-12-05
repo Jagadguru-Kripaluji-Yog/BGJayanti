@@ -1,4 +1,4 @@
-import AwesomeSlider, { AwesomeSliderProps } from "react-awesome-slider";
+import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import withCaptions from "./captioned-hoc";
 import "react-awesome-slider/dist/styles.css";
@@ -20,6 +20,7 @@ export interface HeroProps {
 export function Hero({ autoplay, transitionDelay, screens }: HeroProps) {
   return (
     <AutoplaySlider
+      // @ts-expect-error jsx component HOC
       play={!!autoplay}
       transitionDelay={transitionDelay}
       cancelOnInteraction={false}

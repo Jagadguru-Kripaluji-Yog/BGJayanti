@@ -22,5 +22,6 @@
     "baseUrl": "src"
   },
   "include": ["src", "app.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "typeRoots": ["./typings", "./node_modules/@types/"]
 }

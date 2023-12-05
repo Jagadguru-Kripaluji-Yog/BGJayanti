@@ -1,8 +1,9 @@
 /* eslint-disable  */
+/// @ts-nocheck
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-export default function CaptionedHoc(WrappedComponent) {
+export default function CaptionedHoc(WrappedComponent: any) {
   return class extends Component {
     static propTypes = {
       screens: PropTypes.array.isRequired,

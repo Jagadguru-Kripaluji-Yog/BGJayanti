@@ -5,7 +5,7 @@ export interface ScrollWrapperProps {
   scrollTo: string;
   arrowStyles?: React.CSSProperties;
 }
-export function ScrollWrapper({ children, scrollTo }: ScrollWrapperProps) {
+export function ScrollWrapper({ scrollTo }: ScrollWrapperProps) {
   return (
     <div className="absolute w-full h-full flex z-10 top-0 left-0">
       <a
