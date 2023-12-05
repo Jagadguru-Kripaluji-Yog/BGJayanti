@@ -5,10 +5,10 @@ import { Hero } from "components/hero";
 function App() {
   return (
     <main className="h-full w-full bg-background flex flex-col">
-      <section id="hero" className="h-full w-full">
+      <section id="hero" className="h-full w-full relative">
         <Hero
           transitionDelay={500}
-          autoplay={true}
+          autoplay={false}
           screens={[
             {
               media: "/bg-7.jpeg",
@@ -32,6 +32,9 @@ function App() {
             },
           ]}
         />
+        <ScrollWrapper scrollTo="#description">
+          <div>Scroll down to see more info</div>
+        </ScrollWrapper>
       </section>
       <section
         id="description"
